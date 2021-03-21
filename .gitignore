@@ -1,0 +1,6 @@
+vendor/
+.mysql_history
+php.ini
+lamp-start.sh
+composer.lock
+.env
