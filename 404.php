@@ -48,7 +48,7 @@ div {
 					</li>
 				</ul>
 			</li>
-    <li class="layer" data-depth="0.20"><h1 class="title">Four-Oh-Four</h1></li>
+	  <li class="layer" data-depth="0.20"><h1 class="title">Four-<em>Oh</em>-Four</h1></li>
 			<li class="layer" data-depth="0.30">
 				<ul class="rope depth-30">
 					<li><img src="https://matthew.wagerfield.com/parallax/assets/images/rope.png" alt="Rope"></li>
