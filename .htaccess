@@ -1,0 +1,30 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]
+# Settings to block config files and git from the internet
+RedirectMatch 403 /\.apache2
+RedirectMatch 403 /\.mysql
+RedirectMatch 403 /\.mysql_history
+RedirectMatch 403 /\.git
+RedirectMatch 403 /\.env
+
+<Files "php.ini">  
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+<Files ".env">  
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+# Your 404 and 403 pages
+# ErrorDocument 404 /404.php
+# ErrorDocument 403 /403.php
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
+

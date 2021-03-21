@@ -1,0 +1,7 @@
+{
+    "require": {
+        "rmccue/requests": "^1.7",
+        "bramus/router": "~1.5",
+        "vlucas/phpdotenv": "^4.2"
+    }
+}
